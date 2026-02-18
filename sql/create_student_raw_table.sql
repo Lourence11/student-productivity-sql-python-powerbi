@@ -1,0 +1,23 @@
+CREATE TABLE student_raw (
+    student_id INT,
+    age INT,
+    gender VARCHAR(20),
+    academic_level VARCHAR(50),
+    study_hours FLOAT,
+    self_study_hours FLOAT,
+    online_classes_hours FLOAT,
+    sleep_hours FLOAT,
+    social_media_hours FLOAT,
+    gaming_hours FLOAT,
+    screen_time_hours FLOAT,
+    exercise_minutes INT,
+    caffeine_intake_mg INT,
+    internet_quality VARCHAR(20),
+    part_time_job VARCHAR(10),
+    upcoming_deadline VARCHAR(10),
+    productivity_score FLOAT,
+    exam_score FLOAT,
+    mental_health_score FLOAT,
+    focus_index FLOAT,
+    burnout_level FLOAT
+);
