@@ -65,6 +65,10 @@ It includes:
 |focus_index|Focus performance index|
 |burnout_level|Burnout measurement (0–100 scale)|
 
+# 🛠 Tools Used
+![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+# 🔄 Project Workflow
 ## 1. Data Extraction (SQL – MySQL Workbench)
 - Queried structured student data
 - Used filtering, sorting, and ranking logic
@@ -104,3 +108,13 @@ It includes:
 - Designed layout and color theme
 ### Purpose:
 - To present insights visually and interactively.
+
+# 📊 Power BI Dashboard
+![student_data_page-0001](https://github.com/user-attachments/assets/5b8acea5-627f-43f4-94d1-f6257c368fb8)
+The dashboard visualizes key relationships:
+- Average Exam Score by Academic Level
+- Average Exam Score by Burnout Group
+- Exam Score by Part-Time Job Status
+- Focus Index vs Productivity Score (Scatter with Trend Line)
+- Interactive filtering across all visuals
+
