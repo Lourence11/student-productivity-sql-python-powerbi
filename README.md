@@ -66,7 +66,14 @@ It includes:
 |burnout_level|Burnout measurement (0–100 scale)|
 
 # 🛠 Tools Used
-![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+<p align="left">
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+  <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+</p>
+
 
 # 🔄 Project Workflow
 ## 1. Data Extraction (SQL – MySQL Workbench)
@@ -118,3 +125,69 @@ The dashboard visualizes key relationships:
 - Focus Index vs Productivity Score (Scatter with Trend Line)
 - Interactive filtering across all visuals
 
+# 📈 Charts & Analysis
+To better understand the dataset, I performed exploratory data analysis (EDA) using Pandas, Matplotlib, and Seaborn.
+
+Instead of relying only on summary statistics, I created visualizations to explore how lifestyle factors (sleep, study habits, burnout, focus, etc.) relate to academic performance.
+
+The goal was to identify meaningful relationships that explain student productivity and exam outcomes.
+
+## 1. Correlation Matrix
+<img width="3133" height="2448" alt="correlation_matrix" src="https://github.com/user-attachments/assets/a384439b-c80a-4fc3-9454-2c3514f37499" />
+I started with a correlation heatmap to see how all numerical variables relate to each other. This gave a quick overview of which factors move together and which move in opposite directions.
+
+Highlights:
+- Strong positive correlation between focus index and productivity score
+- Strong negative correlation between burnout level and exam score
+- Moderate positive relationship between study hours and exam score
+- Sleep shows a positive but weaker relationship with performance
+
+## 2. Sleep Hours vs Exam Score
+<img width="2073" height="1420" alt="sleephours_vs_examscore_trendline" src="https://github.com/user-attachments/assets/40116eaa-6518-40c5-be31-b307d9e4a753" />
+This scatter plot shows how sleep duration relates to exam performance. A trend line was added to better visualize the direction of the relationship.
+
+Highlights:
+- Slight positive trend between sleep and exam score
+- Students with 7–9 hours of sleep tend to perform better
+- Sleep alone does not strongly determine performance, but it contributes
+
+## 3. Burnout Level vs Exam Score
+<img width="2073" height="1419" alt="burnout_vs_examscore" src="https://github.com/user-attachments/assets/adc1aa01-3caf-43f4-85b9-81b9b97d3227" />
+This chart clearly shows the impact of burnout on academic results. The downward trend line indicates a negative relationship.
+
+Highlights:
+- Higher burnout levels are associated with lower exam scores
+- Burnout appears to be one of the strongest negative factors affecting performance
+- Students with low burnout consistently score higher
+
+## 4. Focus Index vs Productivity Score
+<img width="2099" height="1420" alt="focusindex_vs_productivityscore" src="https://github.com/user-attachments/assets/d8073b08-dc0a-427d-8d1f-7582ce76d125" />
+This visualization reveals a strong linear relationship between focus and productivity.
+
+Highlights:
+- Strong positive correlation between focus index and productivity score
+- Data points are tightly clustered along the upward trend line
+- Focus appears to be a key driver of productivity
+## 5. Study Hours vs Exam Score
+<img width="2073" height="1420" alt="studyhours_vs_examscore" src="https://github.com/user-attachments/assets/3749671c-2abc-4307-9069-24a91c7707c0" />
+This plot explores how study time influences exam performance.
+
+Highlights:
+- Clear positive trend between study hours and exam score
+- Students who study more tend to achieve higher scores
+- Study consistency appears more impactful than small increases
+
+# 🔍 Key Insights
+1. Focus Index strongly predicts productivity.
+2. Productivity strongly influences exam performance.
+3. Higher burnout levels significantly reduce exam scores.
+4. Study hours positively affect performance but not as strongly as focus.
+5. Students with lower burnout perform significantly better academically.
+6. Part-time job students tend to have slightly lower exam averages.
+
+# 🚀 Conclusion
+This project demonstrates a complete data analytics workflow:
+
+SQL → Excel → Python → Power BI
+
+It highlights how lifestyle factors and mental health indicators impact academic performance, and presents insights through statistical analysis and interactive visualization.
